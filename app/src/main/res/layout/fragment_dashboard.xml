@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.DashboardFragment"
+    android:padding="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello, Welcome to IntelliTank!"
+
+            android:textColor="@color/white"
+            android:fontFamily="@font/bebasneuebold"
+            android:textSize="24dp"
+            android:layout_marginTop="50dp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

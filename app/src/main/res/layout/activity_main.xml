@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context=".Activity.MainActivity">
+
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/MeowBottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:mbn_circleColor="#ffffff"
+        app:mbn_backgroundBottomColor="#ffffff"
+
+        app:mbn_countBackgroundColor="@color/main_green"
+        app:mbn_countTextColor="@color/main_bg"
+
+        app:mbn_defaultIconColor="@color/main_bg"
+        app:mbn_rippleColor="@color/main_bg"
+        app:mbn_selectedIconColor="@color/main_green"
+        app:mbn_shadowColor="#1f212121"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="IntelliTank"
+
+        app:menu="@menu/menu_toolbar"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/MeowBottomNav"
+        android:layout_below="@+id/toolbar"
+
+        >
+
+
+    </FrameLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/rounded_background</item>
+    </style>
+
+    <style name="Widget.MyApp.Chip.Choice" parent="Widget.MaterialComponents.Chip.Choice">
+
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Tank.Chip.Choice</item>
+
+    </style>
+
+    <style name="ThemeOverlay.Tank.Chip.Choice" parent="">
+        <item name="elevationOverlayEnabled">false</item>
+
+    </style>
+</resources>

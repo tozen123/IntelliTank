@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Control.MainControlSystemFragment"
+    android:padding="10dp"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Main Control"
+                android:textColor="@color/main_green"
+                android:fontFamily="@font/bebasneuebold"
+                android:textSize="18dp"
+                android:layout_marginTop="25dp"
+                />
+
+            <!--
+            <LinearLayout
+                android:id="@+id/airPumpGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:layout_below="@+id/header"
+
+                android:background="@drawable/rounded_background_outline"
+                >
+                <TextView
+                    android:id="@+id/headerAirPump"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aerator"
+                    android:textColor="@color/main_green"
+                    android:fontFamily="@font/bebasneuebold"
+                    android:textSize="24dp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/statusAirPump"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status: "
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/bebasneuebold"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"
+
+                        android:layout_weight="0.25"
+                        />
+
+                    <TextView
+                        android:id="@+id/statusValueAirPump"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%STATUS%"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/bebasneuebold"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/statusSetAirPump"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:text="ON"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/rounded_background"
+                    android:layout_gravity="end"
+                    >
+
+                </Button>
+
+            </LinearLayout>
+            -->
+            <LinearLayout
+                android:id="@+id/filterGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:layout_below="@+id/header"
+
+                android:background="@drawable/rounded_background_outline"
+                >
+                <TextView
+                    android:id="@+id/headerFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Filtering System"
+                    android:textColor="@color/main_green"
+                    android:fontFamily="@font/bebasneuebold"
+                    android:textSize="24dp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/statusFilter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status: "
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/bebasneuebold"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"
+
+                        android:layout_weight="0.25"
+                        />
+
+                    <TextView
+                        android:id="@+id/statusValueFilter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%STATUS%"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/bebasneuebold"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/statusSetFilter"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Run Force Filter"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/rounded_background"
+                    android:layout_gravity="end"
+                    >
+
+                </Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/feederGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:layout_below="@+id/filterGroup"
+
+                android:background="@drawable/rounded_background_outline"
+                >
+                <TextView
+                    android:id="@+id/headerFeeder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feeding System"
+                    android:textColor="@color/main_green"
+                    android:fontFamily="@font/bebasneuebold"
+                    android:textSize="24dp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/statusFeeder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status: "
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/bebasneuebold"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"
+
+                        android:layout_weight="0.25"
+                        />
+
+                    <TextView
+                        android:id="@+id/statusValueFeeder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%STATUS%"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/bebasneuebold"
+                        android:textSize="18dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        />
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/statusSetFeeder"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:text="RUN FORCE FEED"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/rounded_background"
+                    android:layout_gravity="end"
+                    >
+
+                </Button>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

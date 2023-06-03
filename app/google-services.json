@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "350230203587",
+    "firebase_url": "https://intellitank-db-default-rtdb.firebaseio.com",
+    "project_id": "intellitank-db",
+    "storage_bucket": "intellitank-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350230203587:android:27c97678a465d9f2a82676",
+        "android_client_info": {
+          "package_name": "com.doublehammerstudios.intellitank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD25Gt9RGqucRfYYn61Z_NyUDT02il9kGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

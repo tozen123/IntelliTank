@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Control.FeedingControlFragment"
+
+    android:padding="10dp"
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerTextView"
+        >
+        <LinearLayout
+            android:id="@+id/feeingControlGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+
+
+            android:background="@drawable/rounded_background_outline"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FEEDING SYSTEM"
+                android:textColor="@color/main_green"
+                android:fontFamily="@font/bebasneuebold"
+                android:textSize="18dp"
+                android:layout_marginTop="25dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+
+                android:text="Select day"
+                android:textColor="@color/white"
+
+                android:textSize="14dp"
+                />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupSelectDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipMonday"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    app:checkedIconTint="@color/main_green"
+                    android:text="Monday"/>
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipTuesday"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+
+                    android:text="Tuesday"/>
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipWednesday"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+
+                    android:text="Wednesday"/>
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipThursday"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+
+                    android:text="Thursday"/>
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipFriday"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+
+                    android:text="Friday"/>
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipSaturday"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+
+                    android:text="Saturday"/>
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chipSunday"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+
+                    android:text="Sunday"/>
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+
+                android:text="Occurence per day"
+
+                android:textColor="@color/white"
+
+                android:textSize="14dp"
+                />
+
+            <EditText
+                android:id="@+id/occurenceEditTextBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext_background"
+                android:padding="12dp"
+                android:textSize="12sp"
+                android:hint="Example: 2"
+                android:layout_marginTop="10dp"
+                >
+
+            </EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:text="24 hour format time is the only accepted format."
+
+                android:textColor="@color/white"
+
+                android:textSize="9sp"
+                />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/containerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <Button
+                android:layout_marginTop="40dp"
+                android:id="@+id/confirmFilteringSystemConfig"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Confirm"
+
+                android:background="@drawable/rounded_background"
+                >
+
+            </Button>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+
+
+                android:textColor="@color/white"
+
+                android:textSize="14dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

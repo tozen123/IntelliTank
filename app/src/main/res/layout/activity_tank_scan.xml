@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context=".Activity.Scan.TankScanActivity">
+
+
+    <ImageView
+        android:id="@+id/mainLogo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_above="@+id/scanButton"
+        android:layout_marginBottom="65dp"
+        />
+
+    <TextView
+        android:id="@+id/scanParagraph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="16dp"
+        android:text="Scan your"
+
+        android:gravity="center"
+
+        android:layout_above="@+id/scanParagraph2"
+        />
+    <TextView
+        android:id="@+id/scanParagraph2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="28dp"
+        android:text="INTELLITANK"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+        android:gravity="center"
+
+        android:layout_above="@+id/scanButton"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:id="@+id/scanButton"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="110dp"
+
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="@color/white"
+
+        style="@style/ButtonStyle"
+
+        android:text="SCAN"
+        android:textColor="@color/main_black"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MonitoringFragment"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Real-Time Monitoring"
+
+            android:textColor="@color/white"
+            android:fontFamily="@font/bebasneuebold"
+            android:textSize="28dp"
+            android:layout_marginTop="80dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/headerAmmonia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="50dp"
+            android:weightSum="1"
+
+            >
+
+            <ImageView
+                android:id="@+id/ammoniaImage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ammoniasensor"
+                android:layout_weight="0.25"
+                />
+
+            <TextView
+                android:id="@+id/headerAmmoniaStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ammonia Presence: "
+                android:layout_gravity="end|center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/bebasneuebold"
+                android:textSize="16dp"
+
+                android:layout_weight="0.2"
+                android:layout_below="@+id/ammoniaImage"
+                />
+
+            <TextView
+                android:id="@+id/headerAmmoniaValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="end|center"
+                android:textColor="@color/main_green"
+                android:fontFamily="@font/bebasneuebold"
+                android:textSize="16dp"
+
+                android:layout_weight="0.3"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:layout_gravity="end|center"
+                android:textColor="@color/main_green"
+                android:fontFamily="@font/bebasneuebold"
+                android:textSize="16dp"
+
+                android:layout_weight="0.3"
+                android:layout_below="@+id/ammoniaImage"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/headerWaterTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerAmmonia"
+
+            android:layout_marginTop="50dp"
+            android:weightSum="1"
+
+            >
+
+            <ImageView
+                android:id="@+id/WaterTempImage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/watersensortemp"
+                android:layout_weight="0.25"
+                />
+
+            <TextView
+                android:id="@+id/headerWaterTempStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Water Temperature: "
+                android:layout_gravity="end|center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/bebasneuebold"
+                android:textSize="16dp"
+
+                android:layout_weight="0.2"
+                android:layout_below="@+id/WaterTempImage"
+                />
+
+            <TextView
+                android:id="@+id/headerWaterTempValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="end|center"
+                android:textColor="@color/main_green"
+                android:fontFamily="@font/bebasneuebold"
+                android:textSize="16dp"
+
+                android:layout_weight="0.3"
+                android:layout_below="@+id/WaterTempImage"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="°C"
+                android:layout_gravity="end|center"
+                android:textColor="@color/main_green"
+                android:fontFamily="@font/bebasneuebold"
+                android:textSize="16dp"
+
+                android:layout_weight="0.3"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/headerPhLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerWaterTemp"
+
+            android:layout_marginTop="50dp"
+            android:weightSum="1"
+            >
+
+            <ImageView
+                android:id="@+id/PhLevelImage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/phlevelsensorr"
+                android:layout_weight="0.25"
+                />
+
+            <TextView
+                android:id="@+id/headerPhLevelStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pH Level: "
+                android:layout_gravity="end|center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/bebasneuebold"
+                android:textSize="16dp"
+
+                android:layout_weight="0.2"
+                android:layout_below="@+id/PhLevelImage"
+                />
+
+            <TextView
+                android:id="@+id/headerPhLevelValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="end|center"
+                android:textColor="@color/main_green"
+                android:fontFamily="@font/bebasneuebold"
+                android:textSize="16dp"
+
+                android:layout_weight="0.3"
+                android:layout_below="@+id/PhLevelImage"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/headerFeedLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerPhLevel"
+
+            android:layout_marginTop="50dp"
+            android:weightSum="1"
+            >
+
+            <ImageView
+                android:id="@+id/FeedLevelImage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/feedicon"
+                android:layout_weight="0.25"
+                />
+
+            <TextView
+                android:id="@+id/headerFeedLevelStat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feeder Storage Level: "
+                android:layout_gravity="end|center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/bebasneuebold"
+                android:textSize="16dp"
+
+                android:layout_weight="0.2"
+                android:layout_below="@+id/FeedLevelImage"
+                />
+
+            <TextView
+                android:id="@+id/headerFeedLevelValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="end|center"
+                android:textColor="@color/main_green"
+                android:fontFamily="@font/bebasneuebold"
+                android:textSize="16dp"
+
+                android:layout_weight="0.3"
+                android:layout_below="@+id/FeedLevelImage"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%"
+                android:layout_gravity="end|center"
+                android:textColor="@color/main_green"
+                android:fontFamily="@font/bebasneuebold"
+                android:textSize="16dp"
+
+                android:layout_weight="0.3"
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
